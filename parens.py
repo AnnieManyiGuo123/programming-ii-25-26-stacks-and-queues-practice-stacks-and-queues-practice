@@ -13,12 +13,12 @@ def is_balanced(expression):
  # Task: how do we know if balanced?
 
  if len(stack) == 0:
-   return True
+   return True 
  else:
    return False 
 
 
-# Test cases
+# test
 print(is_balanced("(5 + 3)")) # Should be True
 print(is_balanced("((5 + 3)")) # Should be False
 print(is_balanced("(5 + (3 * 2))")) # Should be True
