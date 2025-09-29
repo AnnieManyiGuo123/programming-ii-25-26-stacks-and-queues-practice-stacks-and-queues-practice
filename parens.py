@@ -2,15 +2,22 @@ def is_balanced(expression):
  stack = []
  
  for char in expression:
+
   if char == '(':
    # Task: what do we do?
-   pass
- elif char == ')':
+    stack.append('(')
+  elif char == ')':
    # Task: what do we do?
-   pass
+    stack.pop()
  
  # Task: how do we know if balanced?
- return True
+
+ if len(stack) == 0:
+   return True
+ else:
+   return False 
+
+
 # Test cases
 print(is_balanced("(5 + 3)")) # Should be True
 print(is_balanced("((5 + 3)")) # Should be False
